@@ -15,7 +15,7 @@ namespace HomeworkTemplate
                 double roundedNumberOfSick = Math.Truncate(numberOfSick);
                 double roundedNumberKilledPeople = Math.Truncate(numberOfKilledPeople);
 
-                return ($"There are {roundedNumberOfSick} people sick with {task.Virus.Name} in the city of {task.City.Name}, {roundedNumberKilledPeople} of which died"); ;
+                return $"There are {roundedNumberOfSick} people sick with {task.Virus.Name} in the city of {task.City.Name}, {roundedNumberKilledPeople} of which died";
             };
             Task1.CheckSolver(TaskSolver);
         }
