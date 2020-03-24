@@ -12,10 +12,10 @@ namespace HomeworkTemplate
                 float numberOfSick = int.Parse(task.City.Population) * float.Parse(task.City.SickPercentage);
                 float numberOfKilledPeople = int.Parse(task.City.Population) * float.Parse(task.City.SickPercentage) * float.Parse(task.Virus.KillProbability);
 
-                double decimalNumberOfSick = Math.Truncate(numberOfSick);
-                double decimalNumberKilledPeople = Math.Truncate(numberOfKilledPeople);
+                double roundedNumberOfSick = Math.Truncate(numberOfSick);
+                double roundedNumberKilledPeople = Math.Truncate(numberOfKilledPeople);
 
-                return ($"There are {decimalNumberOfSick} people sick with {task.Virus.Name} in the city of {task.City.Name}, {decimalNumberKilledPeople} of which died"); ;
+                return ($"There are {roundedNumberOfSick} people sick with {task.Virus.Name} in the city of {task.City.Name}, {roundedNumberKilledPeople} of which died"); ;
             };
             Task1.CheckSolver(TaskSolver);
         }
